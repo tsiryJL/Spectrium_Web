@@ -1,29 +1,4 @@
-/******************************************************************
-  Template Name: Dreams
-  Description: Dreams wedding template
-  Author: Colorib
-  Author URI: https://colorlib.com/
-  Version: 1.0
-  Created: Colorib
-******************************************************************/
-/*------------------------------------------------------------------
-[Table of contents]
 
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Services Section
-6.  Counter Section
-7.  Team Section
-8.  Latest Section
-9.  Contact
-10.  Footer Style
--------------------------------------------------------------------*/
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
@@ -307,7 +282,7 @@ ol {
   padding: 30px 0;
 }
 .header__logo a {
-  display: inline-block;
+  display: flex;
 }
 
 .header__nav__option {
@@ -870,7 +845,7 @@ ol {
   line-height: 40px;
 }
 .footer__top__logo a {
-  display: inline-block;
+  display: flex;
 }
 
 .footer__top__social {
@@ -1025,34 +1000,6 @@ ol {
 }
 
 /*---------------------
-  About
------------------------*/
-.about {
-  background: #100028;
-  padding-bottom: 150px;
-}
-
-.about__pic__item {
-  height: 235px;
-  margin-right: -10px;
-  margin-bottom: 20px;
-}
-.about__pic__item.about__pic__item--large {
-  height: 490px;
-}
-
-.about__text {
-  padding-left: 30px;
-}
-.about__text .services__item .services__item__icon:after {
-  border-color: #281A3E;
-}
-
-.about__text__desc {
-  margin-top: -10px;
-}
-
-/*---------------------
   Testimonial
 -----------------------*/
 .testimonial {
@@ -1189,8 +1136,8 @@ ol {
   Logo
 -----------------------*/
 .logo {
-  background: #100028;
-  padding: 100px 20px;
+  font-weight: bold;
+  color:white;
 }
 
 .logo__carousel.owl-carousel .owl-item img {
@@ -1198,150 +1145,6 @@ ol {
   display: inline-block;
 }
 
-/*---------------------
-  Portfolio
------------------------*/
-.portfolio {
-  background: #100028;
-}
-
-.portfolio__filter {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.portfolio__filter li {
-  list-style: none;
-  font-size: 16px;
-  color: #adadad;
-  margin-right: 5px;
-  display: inline-block;
-  cursor: pointer;
-  padding: 6px 22px;
-}
-.portfolio__filter li.active {
-  border: 1px solid #00bfe7;
-}
-.portfolio__filter li:last-child {
-  margin-right: 0;
-}
-
-.portfolio__item {
-  margin-bottom: 35px;
-}
-.portfolio__item:hover .portfolio__item__text h4:after {
-  opacity: 1;
-}
-
-.portfolio__item__video {
-  height: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 28px;
-}
-.portfolio__item__video .play-btn {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 20px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-}
-
-.portfolio__item__text {
-  text-align: center;
-}
-.portfolio__item__text h4 {
-  color: #ffffff;
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  position: relative;
-}
-.portfolio__item__text h4:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 100%;
-  background: #333;
-  content: "";
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-  opacity: 0;
-}
-.portfolio__item__text ul li {
-  list-style: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 300;
-  margin-right: 24px;
-  position: relative;
-  color: #adadad;
-}
-.portfolio__item__text ul li:after {
-  position: absolute;
-  right: -16px;
-  top: 0;
-  content: "/";
-}
-.portfolio__item__text ul li:last-child {
-  margin-right: 0;
-}
-.portfolio__item__text ul li:last-child:after {
-  display: none;
-}
-.portfolio__item__text span {
-  font-size: 16px;
-  font-weight: 300;
-  color: #adadad;
-  display: block;
-}
-
-.pagination__option {
-  text-align: center;
-  padding-top: 20px;
-}
-.pagination__option.blog__pagi {
-  padding-top: 5px;
-}
-.pagination__option .arrow__pagination {
-  font-size: 15px;
-  color: #ffffff;
-  display: inline-block;
-  text-transform: uppercase;
-}
-.pagination__option .arrow__pagination.left__arrow {
-  margin-right: 26px;
-}
-.pagination__option .arrow__pagination.right__arrow {
-  margin-left: 18px;
-}
-.pagination__option .arrow__pagination span {
-  opacity: 0.5;
-}
-.pagination__option .number__pagination {
-  font-size: 18px;
-  color: #ffffff;
-  height: 50px;
-  width: 50px;
-  background: rgba(242, 242, 242, 0.1);
-  line-height: 50px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 6px;
-}
 
 /*---------------------
     Blog
@@ -1673,113 +1476,6 @@ ol {
 }
 .input__list input:placeholder {
   color: #adadad;
-}
-
-/*---------------------
-  Contact Widget
------------------------*/
-.contact-widget {
-  background: #100028;
-  padding-bottom: 70px;
-}
-
-.contact__widget__item {
-  margin-bottom: 30px;
-}
-
-.contact__widget__item__icon {
-  height: 70px;
-  width: 70px;
-  border: 1px solid rgba(225, 225, 225, 0.5);
-  line-height: 80px;
-  text-align: center;
-  border-radius: 50%;
-  float: left;
-  margin-right: 30px;
-}
-.contact__widget__item__icon i {
-  font-size: 30px;
-  color: #ffffff;
-}
-
-.contact__widget__item__text {
-  overflow: hidden;
-  padding-top: 7px;
-}
-.contact__widget__item__text h4 {
-  font-size: 22px;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.contact__widget__item__text p {
-  margin-bottom: 0;
-}
-
-/*---------------------
-  Contact
------------------------*/
-.contact {
-  background: #100028;
-  padding-top: 0;
-  overflow: hidden;
-}
-
-.contact__map {
-  height: 450px;
-}
-.contact__map iframe {
-  width: 100%;
-}
-
-.contact__form h3 {
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-}
-.contact__form form input {
-  height: 50px;
-  width: 100%;
-  border: 1px solid rgba(225, 225, 225, 0.5);
-  background: transparent;
-  font-size: 16px;
-  color: #adadad;
-  padding-left: 20px;
-  font-weight: 300;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-.contact__form form input:placeholder {
-  color: #adadad;
-}
-.contact__form form input:focus {
-  border-color: #e1e1e1;
-}
-.contact__form form textarea {
-  height: 110px;
-  width: 100%;
-  border: 1px solid rgba(225, 225, 225, 0.5);
-  background: transparent;
-  font-size: 16px;
-  color: #adadad;
-  padding-top: 12px;
-  padding-left: 20px;
-  font-weight: 300;
-  margin-bottom: 14px;
-  resize: none;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-.contact__form form textarea:placeholder {
-  color: #adadad;
-}
-.contact__form form textarea:focus {
-  border-color: #e1e1e1;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
@@ -2168,3 +1864,4 @@ ol {
     padding: 30px 40px 35px 35px;
   }
 }
+
